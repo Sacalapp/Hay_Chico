@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sacalapp.hay_chico">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="sacalapp.hay_chico.SplashScreen.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="sacalapp.hay_chico.SplashScreen.login.Login" />
+        <activity
+            android:name="sacalapp.hay_chico.Registro"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="sacalapp.hay_chico.Compl_Perfil"
+            android:label="@string/title_activity_compl__perfil"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="sacalapp.hay_chico.Perfil"
+            android:label="@string/title_activity_perfil"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="sacalapp.hay_chico.Equipo"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="sacalapp.hay_chico.Fichajes"
+            android:label="@string/title_activity_fichajes"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="sacalapp.hay_chico.Rivales"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="sacalapp.hay_chico.Reservas" />
+        <activity android:name="sacalapp.hay_chico.Partidos" />
+        <activity android:name="sacalapp.hay_chico.Rss.Noticias_detalles" />
+        <activity android:name="sacalapp.hay_chico.Notificacion_equipo" />
+        <activity android:name="sacalapp.hay_chico.Notificacion_usuario" />
+        <activity
+            android:name="sacalapp.hay_chico.Crear_equipo"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="sacalapp.hay_chico.Notificacion_partido" />
+        <activity
+            android:name="sacalapp.hay_chico.Tengo_chico"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="sacalapp.hay_chico.Partidos_usuarios" />
+
+        <service
+            android:name="sacalapp.hay_chico.Notificaciones"
+            android:enabled="true"
+          />
+
+
+
+        <activity android:name="sacalapp.hay_chico.Notificacion_reservas_equipos" />
+        <activity android:name="sacalapp.hay_chico.calificacion_usuarios" />
+        <activity android:name="sacalapp.hay_chico.ajustes" />
+        <activity android:name="sacalapp.hay_chico.Mi_Ubicacion" />
+        <activity android:name="sacalapp.hay_chico.Bienvenido" />
+        <activity android:name="sacalapp.hay_chico.Reservas_off" />
+        <activity android:name="sacalapp.hay_chico.reservas_fija" />
+        <activity android:name="sacalapp.hay_chico.Chat_capi_equipos" />
+        <activity android:name="sacalapp.hay_chico.Terminos_Y_Condiciones" />
+        <activity android:name="sacalapp.hay_chico.Suspendido"></activity>
+
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+
+
+        <receiver android:name=".InicioNotificacionReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_jugador"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:cropToPadding="false"
+            android:src="@drawable/perfil"
+            app:civ_border_color="@color/Blanco"
+            app:civ_border_width="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_jugador"
+        android:layout_toRightOf="@+id/img_jugador"
+        android:background="@drawable/globochat"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbl_nombre_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Texto"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/message_sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/Texto"
+                android:textSize="8sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/message_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/Texto"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lbl_hora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/lbl_nombre_t"
+            android:layout_toRightOf="@+id/lbl_nombre_t"
+            android:layout_weight="3"
+            android:gravity="left"
+            android:textColor="@color/Texto"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

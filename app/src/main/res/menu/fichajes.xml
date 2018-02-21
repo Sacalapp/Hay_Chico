@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fichajes"
+    tools:ignore="ExtraText">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="buscar"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/Actualizar"
+        android:icon="@drawable/ic_refrs"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom"
+        android:title="@string/Actualizar"
+        app:showAsAction="always" />
+    />
+
+</menu>

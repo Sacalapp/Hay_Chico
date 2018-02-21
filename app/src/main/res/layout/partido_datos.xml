@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo_par"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <View
+        android:id="@+id/linassuperior"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/lbl_nombre_fichaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Nombre"
+        android:textAlignment="center"
+        android:textColor="@color/Texto"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ima_fichajes"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:cropToPadding="false"
+
+                    app:civ_border_color="@color/Blanco"
+                    app:civ_border_width="1dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lbl_nick_fichajes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/Texto"
+                android:textColorHighlight="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/calificacion"
+                android:textColor="@color/Texto" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/ratingBar_calificacion_fichajes"
+                    style="@android:style/Widget.Holo.Light.RatingBar.Indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="37dp"
+                    android:minHeight="37dp"
+                    android:numStars="5"
+                    android:rating="2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:id="@+id/smartImageView_nivel2"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1" />
+
+                        <ImageView
+
+                            android:id="@+id/smartImageView_perfil"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lbl_posi_fichajes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@color/Texto"
+                                android:textColorHighlight="@color/colorPrimaryDark" />
+
+                            <TextView
+                                android:id="@+id/lbl_eda_fichajes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@color/Texto"
+                                android:textColorHighlight="@color/colorPrimaryDark" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lbl_ciuidad_fichajes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="ciudad"
+                            android:textColor="@color/Texto"
+                            android:textColorHighlight="@color/colorPrimaryDark" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_Salir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/fondo_botones"
+            android:padding="12dp"
+            android:text="Volver"
+            android:textColor="@color/Texto" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/fic_inv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fondo_botones"
+            android:padding="12dp"
+            android:text="Cambio"
+            android:textColor="@color/Texto" />
+
+    </LinearLayout>
+
+</LinearLayout>

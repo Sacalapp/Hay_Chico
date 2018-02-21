@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/lbl_info_de_reserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/negro" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        tools:ignore="UselessParent">
+
+
+        <com.github.snowdream.android.widget.SmartImageView
+            android:id="@+id/img_equipo_perfil"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginStart="39dp"
+            android:layout_alignTop="@+id/linearLayout16"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_equipo_perfil"
+            android:layout_toRightOf="@+id/img_equipo_perfil"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_fecha_partido"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.72"
+                android:gravity="center"
+                android:textColor="@color/negro"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lbl_hora_partido"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.72"
+                android:gravity="center"
+                android:textColor="@color/negro"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/lbl_dia_semana"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:lines="2"
+                android:textColor="@color/negro"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_estatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_adelante"
+            android:layout_alignBottom="@+id/linearLayout16"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/linearLayout16"
+            android:layout_toEndOf="@+id/linearLayout16" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_volver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/fondo_degradado"
+            android:padding="12dp"
+            android:text="@string/volver"
+            android:textColor="@color/Texto"
+            android:textSize="11sp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/fondo_degradado"
+            android:padding="12dp"
+            android:text="Aceptar"
+            android:textColor="@color/Texto"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</LinearLayout>

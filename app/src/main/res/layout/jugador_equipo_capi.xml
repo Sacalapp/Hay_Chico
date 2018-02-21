@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:gravity="left"
+    tools:ignore="RtlHardcoded">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp"
+        tools:ignore="UselessParent">
+
+        <com.github.snowdream.android.widget.SmartImageView
+
+            android:id="@+id/imm_capi_equipo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_toEndOf="@+id/linearLayout6"
+            android:layout_toRightOf="@+id/linearLayout6"
+            android:layout_weight="1"
+            android:src="@drawable/ic_capitan"
+            android:visibility="invisible" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/img_jugador_equipo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/perfil" />
+
+        <com.github.snowdream.android.widget.SmartImageView
+
+            android:id="@+id/smartImageView_adelante"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_adelante" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_jugador_equipo"
+            android:layout_toRightOf="@+id/img_jugador_equipo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_nombre_jugador_equipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.72"
+                android:gravity="center|start"
+                android:text="@string/hint_nombre"
+                android:textColor="@color/negro"
+                android:textColorHighlight="@color/Blanco"
+                android:textSize="14sp"
+                tools:text="@string/posicion" />
+
+            <TextView
+                android:id="@+id/lbl_posicion_jugador_equipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.72"
+                android:textColor="@color/negro" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+
+        <ImageView
+            android:id="@+id/noti_equipo_img"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/noti_img"
+            android:layout_toLeftOf="@+id/noti_img"
+            android:layout_toStartOf="@+id/noti_img"
+            android:background="@drawable/ic_notifications_2"
+            android:visibility="invisible" />
+
+        <com.github.snowdream.android.widget.SmartImageView
+            android:id="@+id/img_equipo_perfil"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_equipo_perfil"
+            android:layout_alignTop="@+id/noti_img"
+            android:layout_toEndOf="@+id/img_equipo_perfil"
+            android:layout_toRightOf="@+id/img_equipo_perfil"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_equipo_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.72"
+                android:gravity="center|start"
+                android:textColor="@color/Texto"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/lbl_apodo_equipo_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.72"
+                android:gravity="center|start"
+                android:textColor="@color/Texto"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/noti_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_adelante" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Equipo"
+    tools:ignore="ExtraText">
+
+    <item
+        android:id="@+id/partidos"
+        android:icon="@drawable/ic_balon"
+        android:menuCategory="secondary"
+        android:orderInCategory="1"
+        android:title="partidos"
+        app:actionLayout="@layout/action_bar_notifitcation_icon_futbol"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/actionNotifications"
+        android:icon="@drawable/ic_notifications"
+        android:menuCategory="secondary"
+        android:orderInCategory="2"
+        android:title="Cart"
+        app:actionLayout="@layout/action_bar_notifitcation_icon"
+        app:showAsAction="always" />
+
+</menu>

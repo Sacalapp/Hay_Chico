@@ -1,0 +1,87 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme_2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/Blanco</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="Theme_Dialog_Translucent" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Error" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="Hint" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Counter" parent="TextAppearance.Design.Counter">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="CounterOverFlow" parent="TextAppearance.Design.Counter.Overflow">
+        <item name="android:textColor">#ff3d00</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Dialogo" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/Texto</item>
+    </style>
+
+    <style name="Dialogo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Dialogo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+    
+    <style name="Titulo" parent="TextAppearance.ShowcaseView.Title">
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <style name="cuerpo" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">#ef080808</item>
+        <item name="android:textColor">#FF33B4E4</item>
+        <item name="sv_showcaseColor">#FF33B4E4</item>
+        <item name="sv_titleTextAppearance">@style/Titulo</item>
+
+    </style>
+
+    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Validando…</item>
+        <item name="DialogSpotColor">@color/colorPrimary</item>
+        <item name="DialogSpotCount">4</item>
+    </style>
+
+
+
+
+
+
+</resources>

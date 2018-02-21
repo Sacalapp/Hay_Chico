@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/negro"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ingrese Código"
+        android:textColor="@color/Texto" />
+
+    <LinearLayout
+        android:id="@+id/area_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="6"
+            app:counterEnabled="true"
+            app:counterMaxLength="6"
+            app:errorTextAppearance="@style/Error">
+
+            <EditText
+                android:id="@+id/campo_telefono"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/Texto" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancelar_codigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/fondo_botones"
+            android:text="Cancelar"
+            android:textColor="@color/Texto" />
+
+        <Button
+            android:id="@+id/btn_buscar_codigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/fondo_botones"
+            android:text="Buscar"
+            android:textColor="@color/Texto" />
+    </LinearLayout>
+
+</LinearLayout>

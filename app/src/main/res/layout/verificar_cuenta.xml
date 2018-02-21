@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/bnt_veri"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_check" />
+
+    <TextView
+        android:id="@+id/info_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="@color/negro" />
+
+    <Button
+        android:id="@+id/bnt_veri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Ir a Verificar" />
+
+</LinearLayout>

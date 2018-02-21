@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/negro_tras"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Equipo">
+
+    <LinearLayout
+
+        android:id="@+id/area_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        tools:ignore="ObsoleteLayoutParam"
+        android:layout_toLeftOf="@+id/btn_enviar_m"
+        android:layout_toStartOf="@+id/btn_enviar_m">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_mensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="170"
+            app:counterOverflowTextAppearance="@style/CounterOverFlow"
+            app:counterTextAppearance="@style/Counter"
+            app:errorTextAppearance="@style/Error"
+            tools:ignore="RtlHardcoded">
+
+            <EditText
+                android:id="@+id/campo_mensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Escriba su mensaje"
+
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/Texto"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_enviar_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_adelante"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

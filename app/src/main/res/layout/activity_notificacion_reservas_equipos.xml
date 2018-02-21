@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    tools:context="sacalapp.hay_chico.Notificacion_equipo">
+
+    <TextView
+        android:id="@+id/lbl_reservas_equipo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No tienes Reservas" />
+
+    <ListView
+        android:id="@+id/listView_res"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Blanco"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+</RelativeLayout>

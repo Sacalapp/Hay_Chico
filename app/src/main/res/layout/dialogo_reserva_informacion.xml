@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo_par"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Reservar para el "
+        android:textColor="@color/Texto"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:id="@+id/area_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/list_cancha"
+            android:layout_toEndOf="@+id/list_cancha"
+            android:layout_toRightOf="@+id/list_cancha"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="ObsoleteLayoutParam">
+
+            <ImageView
+                android:id="@+id/img_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/list_cancha"
+                android:layout_toRightOf="@+id/list_cancha"
+                android:layout_weight="1"
+                android:contentDescription=""
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_calendario"
+                tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/lbl_fecha_partido_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Texto"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="A las"
+            android:textColor="@color/Texto"
+            android:textSize="12sp" />
+
+        <LinearLayout
+
+            android:id="@+id/area_hora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/list_cancha"
+            android:layout_toRightOf="@+id/list_cancha"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="ObsoleteLayoutParam">
+
+            <ImageView
+                android:id="@+id/img_hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toEndOf="@+id/list_cancha"
+                android:layout_toRightOf="@+id/list_cancha"
+                android:layout_weight="1"
+                android:contentDescription=""
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_hora"
+                tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/lbl_hora_reservas_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Texto"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Lugar"
+        android:textColor="@color/Texto"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_lugar_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/Texto" />
+
+            <ImageView
+                android:id="@+id/img_lugar"
+                android:layout_width="48dp"
+                android:layout_height="64dp"
+                app:srcCompat="@drawable/cancha_equipos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_cancha_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/Texto" />
+
+            <ImageView
+                android:id="@+id/img_cancha"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:srcCompat="@drawable/cancha_equipos" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_volver_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Volver" />
+
+        <Button
+            android:id="@+id/btn_reservar_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reservar" />
+    </LinearLayout>
+
+</LinearLayout>

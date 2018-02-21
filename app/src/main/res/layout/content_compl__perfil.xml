@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comple__perfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sacalapp.hay_chico.Compl_Perfil">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/negro_tras">
+
+        <com.baoyachi.stepview.HorizontalStepView
+            android:id="@+id/step_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonCompletar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/buttonCompletar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/nombre_perfil"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:id="@+id/area_fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignLeft="@+id/area_fecha"
+                    android:layout_alignStart="@+id/area_fecha"
+                    android:layout_below="@+id/area_fecha"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:ignore="DuplicateIds,ObsoleteLayoutParam">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+
+                        android:textColorHint="@color/Texto"
+                        app:errorTextAppearance="@style/Error"
+                        tools:ignore="RtlHardcoded">
+
+                        <EditText
+                            android:id="@+id/campo_nick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="@string/apodo"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textAlignment="center"
+                            android:textColor="@color/Texto"
+                            android:textSize="20sp"
+                            app:theme="@style/AppTheme_2" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                tools:ignore="UnknownId">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical"
+                    tools:ignore="ObsoleteLayoutParam">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nombre_perfil"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="center"
+                        android:text=" Fecha de Nacimiento"
+                        android:textAlignment="center"
+                        android:textColor="@color/Texto" />
+
+                    <LinearLayout
+
+                        android:id="@+id/sel_fecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textView7"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        tools:ignore="ObsoleteLayoutParam">
+
+                        <ImageView
+                            android:id="@+id/img_fecha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription=""
+                            android:onClick="Calendario"
+                            android:paddingRight="10dp"
+                            android:src="@drawable/ic_calendario"
+                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry" />
+
+                        <TextView
+                            android:id="@+id/lbl_fecha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="Calendario"
+                            android:text="Selecione aqui"
+                            android:textColor="@color/Texto"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="ObsoleteLayoutParam">
+
+                    <RelativeLayout
+
+                        android:id="@+id/posicion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textView7"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal"
+                        tools:ignore="ObsoleteLayoutParam">
+
+                        <ImageView
+                            android:id="@+id/Posicion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription=""
+                            android:onClick="posi"
+                            android:src="@drawable/ic_selecione"
+                            tools:ignore="ContentDescription" />
+
+                        <ImageView
+                            android:id="@+id/img_posi"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription=""
+                            android:onClick="posi"
+                            android:src="@drawable/icono_posi"
+                            tools:ignore="ContentDescription" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/til_posicion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+
+                            app:errorTextAppearance="@style/Error"
+                            tools:ignore="RtlHardcoded">
+
+                            <TextView
+                                android:id="@+id/lbl_posicion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:onClick="posi"
+                                android:text="Posición"
+                                android:textColor="@color/Texto"
+                                android:textSize="18sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:id="@+id/lbl_pierna"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textView7"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal"
+                        tools:ignore="ObsoleteLayoutParam">
+
+                        <ImageView
+                            android:id="@+id/pierna_h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription=""
+                            android:onClick="pierna"
+                            android:src="@drawable/ic_selecione"
+                            tools:ignore="ContentDescription" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/til_pierna"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+
+                            app:errorTextAppearance="@style/Error"
+                            tools:ignore="RtlHardcoded">
+
+                            <TextView
+                                android:id="@+id/lbl_pierna_habil"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_weight="1"
+                                android:onClick="pierna"
+                                android:text="Pierna Hábil"
+                                android:textColor="@color/Texto"
+                                android:textSize="18sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/img_pierna"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription=""
+                            android:onClick="pierna"
+                            android:src="@drawable/ic_pierna_habil"
+                            tools:ignore="ContentDescription" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:id="@+id/lbl_sexo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textView7"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal"
+                        tools:ignore="ObsoleteLayoutParam">
+
+                        <ImageView
+                            android:id="@+id/img_sexo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription=""
+                            android:onClick="sex"
+                            android:src="@drawable/ic_perfil_2"
+                            tools:ignore="ContentDescription" />
+
+                        <ImageView
+                            android:id="@+id/Sexo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription=""
+                            android:onClick="sex"
+                            android:src="@drawable/ic_selecione"
+                            tools:ignore="ContentDescription" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/til_sexo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+
+                            app:errorTextAppearance="@style/Error"
+                            tools:ignore="RtlHardcoded">
+
+                            <TextView
+                                android:id="@+id/lbl_sexo_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_weight="1"
+                                android:onClick="sex"
+                                android:text="Sexo"
+                                android:textColor="@color/Texto"
+                                android:textSize="18sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:id="@+id/lbl_Ciuda"
+                        android:layout_width="255dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textView7"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal"
+                        tools:ignore="ObsoleteLayoutParam">
+
+                        <ImageView
+                            android:id="@+id/img_ciudad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription=""
+                            android:onClick="ciudad"
+                            android:src="@drawable/ic_ciudad"
+                            tools:ignore="ContentDescription" />
+
+                        <ImageView
+                            android:id="@+id/Ciudad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription=""
+                            android:onClick="ciudad"
+                            android:src="@drawable/ic_selecione"
+                            tools:ignore="ContentDescription" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/til_ciudad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+
+                            app:errorTextAppearance="@style/Error"
+                            tools:ignore="RtlHardcoded">
+
+                            <TextView
+                                android:id="@+id/lbl_ciudad"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_weight="1"
+                                android:onClick="ciudad"
+                                android:text="Ciudad"
+                                android:textColor="@color/Texto"
+                                android:textSize="18sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView49"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:text="Seleciona tu nivel futbolístico"
+                                android:textAlignment="center"
+                                android:textColor="@color/Blanco"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:onClick="Nivel"
+                                app:srcCompat="@android:drawable/ic_dialog_info" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/btn_recreativo"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/redondeado"
+                                app:srcCompat="@drawable/ic_recreacion" />
+
+                            <ImageButton
+                                android:id="@+id/btn_amateur"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/redondeado"
+                                app:srcCompat="@drawable/ic_amateur" />
+
+                            <ImageButton
+                                android:id="@+id/btn_semipro"
+                                android:layout_width="32dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/redondeado"
+                                app:srcCompat="@drawable/ic_semipro" />
+
+                            <ImageButton
+                                android:id="@+id/btn_pro"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/redondeado"
+                                app:srcCompat="@drawable/ic_pro" />
+
+                            <ImageButton
+                                android:id="@+id/btn_leyenda"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/redondeado"
+                                app:srcCompat="@drawable/ic_leyenda" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/lbl_nivel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:textColor="@color/Blanco" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/nombre_perfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Completa tu perfil"
+        android:textColor="@color/Texto"
+        android:textSize="16sp" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buttonCompletar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:padding="12dp"
+        android:text="@string/Completar_Perfil"
+        android:textColor="@color/Texto" />
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_number": "55430450667",
+    "firebase_url": "https://hay-chico-ebd33.firebaseio.com",
+    "project_id": "hay-chico-ebd33",
+    "storage_bucket": "hay-chico-ebd33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55430450667:android:3f61738577864c06",
+        "android_client_info": {
+          "package_name": "sacalapp.hay_chico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55430450667-v6t6i6tgjjbj288j6up94eu4msq8183d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDLNwpOZp2Sb6V8m4w91VQ8C74e9qd6oo"
+        },
+        {
+          "current_key": "AIzaSyCPf7ydotU9PmgL3eUd9x4pyNxtoPhAy4o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

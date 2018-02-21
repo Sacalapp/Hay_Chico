@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        tools:ignore="UselessParent">
+
+
+        <com.github.snowdream.android.widget.SmartImageView
+
+            android:id="@+id/img_go"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_adelante_nego" />
+
+        <ImageView
+            android:id="@+id/img_cancha_portada"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/escudo_72" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_cancha_portada"
+            android:layout_toRightOf="@+id/img_cancha_portada"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_nombre_cancha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.72"
+                android:gravity="center|start"
+                android:textColor="@color/negro"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textSize="11sp"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/lbl_dir_cancha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.72"
+                android:textColor="@color/negro"
+                android:textSize="9sp"
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

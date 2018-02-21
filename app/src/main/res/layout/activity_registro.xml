@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo8"
+    android:gravity="center_horizontal|center"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:layout_collapseParallaxMultiplier="1.0"
+    app:layout_scrollFlags="scroll"
+    tools:context=".Registro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Datos Personales"
+            android:textColor="@color/Texto"
+            android:textSize="16sp" />
+
+        <com.baoyachi.stepview.HorizontalStepView
+            android:id="@+id/step_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/buttonRegistrate"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="11dp"
+                    android:gravity="center"
+                    tools:ignore="UselessParent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="20dp"
+                            android:elevation="0dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/area_apodo_equipo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/img_correo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:contentDescription=""
+                                    android:src="@drawable/ic_telefono"
+                                    tools:ignore="ContentDescription" />
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/til_telefono"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="32dp"
+                                    android:maxLength="10"
+                                    android:textColorHint="@color/Texto"
+                                    app:counterEnabled="true"
+                                    app:counterMaxLength="10"
+                                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                                    app:counterTextAppearance="@style/Counter"
+                                    app:errorTextAppearance="@style/Error"
+                                    tools:ignore="RtlHardcoded">
+
+                                    <EditText
+                                        android:id="@+id/campo_telefono"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:digits="1234567890 "
+                                        android:ems="10"
+                                        android:gravity="center_vertical|end"
+                                        android:hint="@string/hint_celular"
+                                        android:inputType="phone"
+                                        android:textColor="@color/Texto"
+                                        android:textSize="13sp" />
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+
+                                android:id="@+id/area_nombre"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:orientation="horizontal"
+                                tools:ignore="ObsoleteLayoutParam">
+
+                                <ImageView
+                                    android:id="@+id/img_cliente"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:contentDescription=""
+                                    android:src="@drawable/ic_nombre"
+                                    tools:ignore="ContentDescription" />
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/til_nombre"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="32dp"
+                                    android:textColorHint="@color/Texto"
+                                    app:counterEnabled="true"
+                                    app:counterMaxLength="20"
+                                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                                    app:counterTextAppearance="@style/Counter"
+                                    app:errorTextAppearance="@style/Error"
+                                    tools:ignore="RtlHardcoded">
+
+                                    <EditText
+                                        android:id="@+id/campo_nombre"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ems="10"
+                                        android:gravity="end"
+                                        android:hint="@string/hint_nombre"
+                                        android:inputType="text"
+                                        android:maxLines="1"
+                                        android:textColor="@color/Texto"
+                                        android:textSize="13sp" />
+                                </android.support.design.widget.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/area_correo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/img_telefono"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_row="2"
+                                        android:src="@drawable/ic_correo"
+                                        tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/til_correo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="32dp"
+                                        android:textColorHint="@color/Texto"
+                                        app:errorTextAppearance="@style/Error"
+                                        tools:ignore="RtlHardcoded">
+
+                                        <EditText
+                                            android:id="@+id/campo_correo"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:gravity="center_vertical|end"
+                                            android:hint="@string/Email"
+                                            android:inputType="textEmailAddress"
+                                            android:maxLines="1"
+                                            android:textColor="@color/Texto"
+                                            android:textSize="13sp" />
+                                    </android.support.design.widget.TextInputLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/area_conf_correo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/img_confi_correo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_row="2"
+                                        android:src="@drawable/ic_correo"
+                                        tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/til_conf_correo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="32dp"
+                                        android:textColorHint="@color/Texto"
+                                        app:errorTextAppearance="@style/Error"
+                                        tools:ignore="RtlHardcoded">
+
+                                        <EditText
+                                            android:id="@+id/campo_conf_correo"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:gravity="center_vertical|end"
+                                            android:hint="Confirmar Correo"
+                                            android:inputType="textEmailAddress"
+                                            android:maxLines="1"
+                                            android:textColor="@color/Texto"
+                                            android:textSize="13sp" />
+                                    </android.support.design.widget.TextInputLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/area_pass"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/img_password"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_row="2"
+                                        android:contentDescription=""
+                                        android:src="@drawable/ic_password"
+                                        tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/til_pass"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="32dp"
+                                        android:textColorHint="@color/Texto"
+                                        app:errorTextAppearance="@style/Error"
+                                        app:passwordToggleEnabled="true"
+                                        app:passwordToggleTint="@color/Blanco"
+
+                                        tools:ignore="RtlHardcoded">
+
+                                        <EditText
+                                            android:id="@+id/campo_password"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:gravity="center"
+                                            android:hint="@string/Clave"
+                                            android:inputType="textPassword"
+                                            android:maxLines="1"
+                                            android:textColor="@color/Texto"
+                                            android:textSize="13sp" />
+                                    </android.support.design.widget.TextInputLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/area_passconf"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/area_apodo_equipo"
+                                    android:orientation="horizontal"
+                                    tools:ignore="ObsoleteLayoutParam">
+
+                                    <ImageView
+                                        android:id="@+id/img_passwordconf"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:contentDescription=""
+                                        android:src="@drawable/ic_password"
+                                        tools:ignore="ContentDescription" />
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/til_passconf"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="32dp"
+                                        android:textColorHint="@color/Texto"
+                                        app:errorTextAppearance="@style/Error"
+                                        app:passwordToggleEnabled="true"
+                                        app:passwordToggleTint="@color/Blanco"
+                                        tools:ignore="RtlHardcoded">
+
+                                        <EditText
+                                            android:id="@+id/campo_passwordconf"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:gravity="center"
+
+                                            android:hint="@string/paswwor"
+                                            android:inputType="textPassword"
+                                            android:maxLines="1"
+                                            android:textColor="@color/Texto"
+                                            android:textSize="13sp" />
+                                    </android.support.design.widget.TextInputLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView6"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:onClick="ayuda"
+                                    android:text="@string/your_string_here"
+                                    android:textColor="@color/Texto"
+                                    android:textSize="10sp"
+                                    tools:ignore="SmallSp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/buttonRegistrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Registrarse"
+                    android:textColor="@color/Texto" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

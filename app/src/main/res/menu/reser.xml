@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="">
+
+
+    <item
+        android:id="@+id/Reserva_fija"
+        android:icon="@drawable/icono_reservas"
+        android:orderInCategory="0"
+        android:showAsAction="ifRoom"
+        android:title="@string/Actualizar"
+        app:showAsAction="always" />
+
+</menu>

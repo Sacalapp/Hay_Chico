@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:context="sacalapp.hay_chico.Perfil"
+    android:id="@+id/cordinal">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp">
+
+
+        <LinearLayout
+            android:id="@+id/msn_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TabHost
+                android:id="@+id/tabhost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/negro"
+                        android:orientation="horizontal"
+                        android:scaleY=".9" />
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/Perfil"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/fondo_perfil"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/trasparencia_verde_10"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/fab_margin"
+                                android:paddingRight="@dimen/fab_margin">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_above="@+id/linearLayout"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        tools:ignore="ObsoleteLayoutParam,TooDeepLayout,UnknownId">
+
+                                        <TextView
+                                            android:id="@+id/lbl_nombre_jugador"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/Texto"
+                                            android:textSize="20sp"
+                                            android:textStyle="bold"
+                                            tools:ignore="TooDeepLayout" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/lbl_apodo_jugador"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:gravity="center"
+                                                android:textAlignment="center"
+                                                android:textColor="@color/Texto" />
+
+                                            <com.github.snowdream.android.widget.SmartImageView
+
+                                                android:id="@+id/smartImageView3"
+                                                android:layout_width="10dp"
+                                                android:layout_height="10dp"
+                                                android:layout_marginLeft="2dp"
+                                                android:layout_weight="1"
+                                                android:elevation="1dp"
+                                                android:onClick="apodo"
+                                                android:src="@drawable/ic_lapiz"
+                                                tools:targetApi="lollipop" android:layout_marginStart="2dp"/>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="bottom|center">
+
+                                            <ImageView
+                                                android:id="@+id/img_perfil"
+                                                android:layout_width="24dp"
+                                                android:layout_height="24dp"
+                                                android:layout_marginRight="10dp"
+                                                android:src="@drawable/ic_derecha" />
+
+                                            <RelativeLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+
+
+                                                <de.hdodenhof.circleimageview.CircleImageView
+                                                    android:id="@+id/img_perfil_jugador"
+                                                    android:layout_width="96dp"
+                                                    android:layout_height="96dp"
+                                                    android:cropToPadding="false"
+                                                    android:src="@drawable/perfil"
+                                                    ads:civ_border_color="@color/Blanco"
+                                                    ads:civ_border_width="4dp"
+                                                     />
+
+                                                <ImageView
+                                                    android:layout_width="18dp"
+                                                    android:layout_height="18dp"
+                                                    android:layout_alignBottom="@+id/img_perfil_jugador"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_marginBottom="11dp"
+                                                    android:src="@drawable/ic_add_a_photo_black_24dp" />
+
+                                            </RelativeLayout>
+
+                                            <ImageView
+                                                android:id="@+id/img_posicion"
+                                                android:layout_width="28dp"
+                                                android:layout_height="28dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:onClick="cambiarPosicion"
+                                                android:src="@drawable/ic_delantero" />
+
+
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:id="@+id/textView9"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="@string/calificacion"
+                                            android:textColor="@color/Texto" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center">
+
+                                            <RatingBar
+                                                android:id="@+id/Rtb_calificacion"
+                                                style="@android:style/Widget.Holo.RatingBar.Indicator"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:numStars="5"
+                                                android:rating="4" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:id="@+id/lbl_ciudad"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:textColor="@color/Texto" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <View
+                                            android:id="@+id/divider_1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginBottom="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:background="@color/colorAccent" />
+
+                                        <RelativeLayout
+                                            android:id="@+id/Contenido_sw"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <TextView
+                                                android:id="@+id/textView16"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBaseline="@+id/switch_hay_chico_2"
+                                                android:layout_alignBottom="@+id/switch_hay_chico_2"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:text="@string/app_name"
+                                                android:textColor="@color/Texto" />
+
+                                            <ToggleButton
+                                                android:id="@+id/switch_hay_chico_2"
+                                                android:layout_width="58dp"
+                                                android:layout_height="28dp"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_alignParentTop="true"
+                                                android:background="@drawable/toogle_options"
+                                                android:textOff=""
+                                                android:textOn="" />
+
+                                            <ImageView
+                                                android:id="@+id/imageView"
+                                                android:layout_width="18dp"
+                                                android:layout_height="18dp"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_toEndOf="@+id/textView16"
+                                                android:layout_toRightOf="@+id/textView16"
+                                                android:onClick="info_tengo_chico"
+                                                ads:srcCompat="@android:drawable/ic_dialog_info" />
+                                        </RelativeLayout>
+
+                                        <View
+                                            android:id="@+id/divider_2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginBottom="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:background="@color/colorAccent" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_above="@+id/switch_hay_chico"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        tools:ignore="ObsoleteLayoutParam">
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+                                                android:orientation="vertical">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_alignParentLeft="true"
+                                                    android:layout_alignParentStart="true"
+                                                    android:layout_alignParentTop="true"
+                                                    android:orientation="horizontal"
+                                                    android:weightSum="1">
+
+                                                    <LinearLayout
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="match_parent"
+                                                        android:gravity="center"
+                                                        android:orientation="vertical">
+
+                                                        <TextView
+                                                            android:id="@+id/textView10"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:gravity="center"
+                                                            android:text="@string/mis_partido"
+                                                            android:textColor="@color/Texto" />
+
+                                                        <RelativeLayout
+                                                            android:layout_width="160dp"
+                                                            android:layout_height="match_parent">
+
+                                                            <LinearLayout
+                                                                android:id="@+id/conte_imagenes_2"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent"
+                                                                android:gravity="center"
+                                                                android:orientation="vertical"
+                                                                android:visibility="visible">
+
+                                                                <TextView
+                                                                    android:id="@+id/lbl_no_partido"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_alignParentLeft="true"
+                                                                    android:layout_alignParentStart="true"
+                                                                    android:layout_alignParentTop="true"
+                                                                    android:gravity="center"
+                                                                    android:onClick="crear_equ"
+                                                                    android:paddingRight="16dp"
+                                                                    android:textColor="@color/Texto"
+                                                                    android:textSize="10sp" />
+
+                                                                <ProgressBar
+                                                                    android:id="@+id/progressBar2"
+                                                                    style="?android:attr/progressBarStyle"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="24dp"
+                                                                    android:progressDrawable="@drawable/ic_balon"
+                                                                    android:visibility="invisible" />
+
+                                                                <ImageView
+                                                                    android:id="@+id/ing_partido"
+                                                                    android:layout_width="48dp"
+                                                                    android:layout_height="48dp"
+                                                                    android:layout_alignParentBottom="true"
+                                                                    android:layout_centerHorizontal="true"
+                                                                    android:layout_marginBottom="22dp"
+                                                                    android:onClick="hay_chico"
+                                                                    android:src="@drawable/ic_lugar"
+                                                                    android:visibility="invisible" />
+
+                                                            </LinearLayout>
+
+                                                            <ListView
+                                                                android:id="@+id/lst_partidos_jugador"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent"
+                                                                android:layout_alignParentLeft="true"
+                                                                android:layout_alignParentStart="true"
+                                                                android:layout_alignParentTop="true" />
+
+                                                        </RelativeLayout>
+
+                                                    </LinearLayout>
+
+                                                    <View
+                                                        android:id="@+id/divider"
+                                                        android:layout_width="1dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_marginBottom="3dp"
+                                                        android:layout_marginTop="3dp"
+                                                        android:background="@color/colorAccent" />
+
+                                                    <LinearLayout
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="match_parent"
+                                                        android:gravity="center"
+                                                        android:orientation="vertical">
+
+                                                        <TextView
+                                                            android:id="@+id/textView25"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:gravity="center"
+                                                            android:text="@string/mis_equipos"
+                                                            android:textColor="@color/Texto" />
+
+                                                        <RelativeLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent">
+
+                                                            <ListView
+                                                                android:id="@+id/lst_equipos_perfil"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="match_parent"
+                                                                android:layout_alignParentLeft="true"
+                                                                android:layout_alignParentStart="true"
+                                                                android:layout_alignParentTop="true" />
+
+                                                            <LinearLayout
+                                                                android:id="@+id/conte_imagenes"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent"
+                                                                android:gravity="center"
+                                                                android:orientation="vertical"
+                                                                android:visibility="visible">
+
+                                                                <TextView
+                                                                    android:id="@+id/lbl_no_equipo"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_alignParentLeft="true"
+                                                                    android:layout_alignParentStart="true"
+                                                                    android:layout_alignParentTop="true"
+                                                                    android:gravity="center"
+                                                                    android:onClick="crear_equ"
+                                                                    android:textColor="@color/Texto"
+                                                                    android:textSize="10sp" />
+
+                                                                <ImageView
+                                                                    android:id="@+id/ing_equipo"
+                                                                    android:layout_width="48dp"
+                                                                    android:layout_height="48dp"
+                                                                    android:layout_alignParentBottom="true"
+                                                                    android:layout_centerHorizontal="true"
+                                                                    android:layout_marginBottom="22dp"
+                                                                    android:onClick="crear_equ"
+                                                                    android:visibility="invisible"
+                                                                    app:srcCompat="@drawable/ic_crear_equipo_2" />
+
+                                                            </LinearLayout>
+
+                                                        </RelativeLayout>
+
+                                                    </LinearLayout>
+
+                                                </LinearLayout>
+                                            </LinearLayout>
+
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Fichajes"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/fondo2"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/negro_tras"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <com.google.android.gms.ads.AdView
+                                        android:id="@+id/adView2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_centerHorizontal="true"
+                                        ads:adSize="BANNER"
+                                        ads:adUnitId="@string/ca_app_pub" />
+
+                                    <TextView
+                                        android:id="@+id/lbl_info"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        tools:ignore="TooDeepLayout" />
+
+                                    <ListView
+                                        android:id="@+id/lst_comtenido"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_above="@+id/adView2"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:cacheColorHint="@color/Texto"
+                                        android:divider="@android:color/darker_gray"
+                                        android:dividerHeight="1dp" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Tendencias"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                ads:layout_behavior="@string/appbar_scrolling_view_behavior"
+                                tools:context="com.example.rssreader.MainActivity"
+                                tools:showIn="@layout/content_perfil">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recyclerview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_above="@+id/adView" />
+
+                                <com.google.android.gms.ads.AdView
+                                    android:id="@+id/adView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    ads:adSize="BANNER"
+                                    ads:adUnitId="@string/ca_app_pub" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+            </TabHost>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

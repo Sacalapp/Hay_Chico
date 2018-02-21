@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Busca">
+        <menu>
+             <item
+                 android:id="@+id/Hay_chico"
+                 android:icon="@drawable/ic_location"
+                 android:title="Hay Chico!"
+                 app:actionLayout="@layout/hay_chico_count" />
+        </menu>
+
+    </item>
+
+    <item android:title="Crear">
+        <menu>
+            <item
+                android:id="@+id/equipo"
+                android:icon="@drawable/ic_crear_equipo"
+                android:title="Crear Equipo" />
+
+            <item
+                android:id="@+id/partido"
+                android:icon="@drawable/ic_crear_partidos"
+                android:title="Crear Partido" />
+
+        </menu>
+    </item>
+
+    <item android:title="Comparte">
+        <menu>
+            <item
+                android:id="@+id/Compartir"
+                android:icon="@drawable/ic_comparir"
+                android:title="Comparte ¿Hay Chico? " />
+
+        </menu>
+    </item>
+
+    <item android:title="Otros">
+        <menu>
+            <item
+                android:id="@+id/ajustes"
+                android:icon="@drawable/ic_ajustes"
+                android:title="Ajustes" />
+            <item
+                android:id="@+id/cerrar_sesion"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Cerrar Sesión" />
+        </menu>
+    </item>
+
+</menu>

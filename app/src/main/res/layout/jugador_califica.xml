@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:gravity="left"
+    tools:ignore="RtlHardcoded">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        tools:ignore="UselessParent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_jugador_equipo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:cropToPadding="false"
+            android:src="@drawable/perfil"
+            app:civ_border_color="@color/Blanco"
+            app:civ_border_width="1dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_jugador_equipo"
+            android:layout_toRightOf="@+id/img_jugador_equipo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_nombre_jugador_equipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.72"
+                android:gravity="center|start"
+                android:textColor="@color/negro"
+                android:textColorHighlight="@color/Blanco"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lbl_posicion_jugador_equipo"
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.72"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="DEL"
+                android:textAlignment="center"
+                android:textColor="@color/Texto"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

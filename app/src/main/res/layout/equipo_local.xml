@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Cambios"
+        android:textColor="@color/Texto"
+        android:textSize="16sp"
+        android:layout_above="@+id/linearLayout4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Alineación "
+        android:textColor="@color/Texto"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cancha_equipos"
+        android:contentDescription=""
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <com.github.snowdream.android.widget.SmartImageView
+
+            android:id="@+id/img_equipo_1_eq"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_below="@+id/CB_local">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout244"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lbl_arquero"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Invitar"
+                        android:textColor="@color/Texto"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/portero_1"
+                        android:layout_width="50dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/circleImageView7"
+                        android:layout_toStartOf="@+id/circleImageView7"
+                        android:cropToPadding="false"
+                        android:onClick="Arquero"
+                        android:src="@drawable/perfil2"
+                        app:civ_border_color="@color/Blanco"
+                        app:civ_border_width="1dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout24"
+                android:layout_centerHorizontal="true"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lbl_defensa_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Invitar"
+                        android:textColor="@color/Texto"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/jugador_2"
+                        android:layout_width="50dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/circleImageView7"
+                        android:layout_toStartOf="@+id/circleImageView7"
+                        android:cropToPadding="false"
+                        android:onClick="Defensa_1"
+                        android:src="@drawable/perfil2"
+                        app:civ_border_color="@color/Blanco"
+                        app:civ_border_width="1dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lbl_defensa_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Invitar"
+                        android:textColor="@color/Texto"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/jugador_3"
+                        android:layout_width="50dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/circleImageView7"
+                        android:layout_toStartOf="@+id/circleImageView7"
+                        android:cropToPadding="false"
+                        android:onClick="Defensa_2"
+                        android:src="@drawable/perfil2"
+                        app:civ_border_color="@color/Blanco"
+                        app:civ_border_width="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout24"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lbl_medio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Invitar"
+                        android:textColor="@color/Texto"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/jugador_4"
+                        android:layout_width="50dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/circleImageView7"
+                        android:layout_toStartOf="@+id/circleImageView7"
+                        android:cropToPadding="false"
+                        android:onClick="Medio"
+                        android:src="@drawable/perfil2"
+                        app:civ_border_color="@color/Blanco"
+                        app:civ_border_width="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout24"
+                android:layout_centerHorizontal="true"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lbl_delantero_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Invitar"
+                        android:textColor="@color/Texto"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/jugador_5"
+                        android:layout_width="50dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/circleImageView7"
+                        android:layout_toStartOf="@+id/circleImageView7"
+                        android:cropToPadding="false"
+                        android:onClick="Delantero_1"
+                        android:src="@drawable/perfil2"
+                        app:civ_border_color="@color/Blanco"
+                        app:civ_border_width="1dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lbl_delantero_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Invitar"
+                        android:textColor="@color/Texto"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/jugador_6"
+                        android:layout_width="50dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/circleImageView7"
+                        android:layout_toStartOf="@+id/circleImageView7"
+                        android:cropToPadding="false"
+                        android:onClick="Delantero_2"
+                        android:src="@drawable/perfil2"
+                        app:civ_border_color="@color/Blanco"
+                        app:civ_border_width="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_jugador_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Invitar"
+                    android:textColor="@color/Texto"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/jugador_7"
+                    android:layout_width="50dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/circleImageView7"
+                    android:layout_toStartOf="@+id/circleImageView7"
+                    android:cropToPadding="false"
+                    android:onClick="jufador_7"
+                    android:src="@drawable/perfil2"
+                    app:civ_border_color="@color/Blanco"
+                    app:civ_border_width="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_jugador_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Invitar"
+                    android:textColor="@color/Texto"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/jugador_8"
+                    android:layout_width="50dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/circleImageView7"
+                    android:layout_toStartOf="@+id/circleImageView7"
+                    android:cropToPadding="false"
+                    android:onClick="jugador_8"
+                    android:src="@drawable/perfil2"
+                    app:civ_border_color="@color/Blanco"
+                    app:civ_border_width="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_jugador_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Invitar"
+                    android:textColor="@color/Texto"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/jugador_9"
+                    android:layout_width="50dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/circleImageView7"
+                    android:layout_toStartOf="@+id/circleImageView7"
+                    android:cropToPadding="false"
+                    android:onClick="jugador_9"
+                    android:src="@drawable/perfil2"
+                    app:civ_border_color="@color/Blanco"
+                    app:civ_border_width="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/Blanco" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/CB_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/negro_tras"
+        android:text="Tengo Chico"
+        android:textColor="@color/Texto"
+        android:textSize="10sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/CB_local"
+        android:layout_toStartOf="@+id/CB_local"
+        android:onClick="info_tengo_chico_2"
+        android:src="@android:drawable/ic_dialog_info" />
+
+</RelativeLayout>

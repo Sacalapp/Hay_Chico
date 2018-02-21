@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_5"
+    tools:context="sacalapp.hay_chico.Suspendido">
+
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView13"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="39dp"
+        android:background="@color/negro_tras"
+        android:gravity="center"
+        android:text="@string/suspencion"
+        android:textColor="@color/Texto"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView34"
+        android:layout_alignStart="@+id/textView34"
+        android:layout_below="@+id/textView34"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="47dp"
+        android:background="@color/negro_tras"
+        android:gravity="center"
+        android:text="@string/suspencion_2"
+        android:textColor="@color/Texto"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView43"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_correo" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="soporte@sacalapp.com"
+            android:textColor="@color/Texto"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_volver_sus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView13"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView13"
+        android:background="@drawable/fondo_botones"
+        android:text="Volver"
+        android:textColor="@color/Texto" />
+
+</RelativeLayout>

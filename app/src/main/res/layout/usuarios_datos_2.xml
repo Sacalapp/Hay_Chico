@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo_fichajes"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/negro_tras"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/linassuperior"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/lbl_nombre_fichaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nombre"
+            android:textAlignment="center"
+            android:textColor="@color/Texto"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="bottom">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:id="@+id/ima_fichajes"
+                        android:layout_width="70dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/perfil"
+                        app:civ_border_color="@color/Blanco"
+                        app:civ_border_width="1dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/calificacion"
+                    android:textColor="@color/Texto" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar_calificacion_fichajes"
+                        style="@android:style/Widget.Holo.RatingBar.Indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxHeight="37dp"
+                        android:minHeight="37dp"
+                        android:numStars="5"
+                        android:rating="2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lbl_eda_fichajes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/Texto"
+                            android:textColorHighlight="@color/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/lbl_estatus_partido"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/Texto"
+                            android:textColorHighlight="@color/colorPrimaryDark" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_Salir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/fondo_botones"
+                android:padding="12dp"
+                android:text="Salir"
+                android:textColor="@color/Texto" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_rechazar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/fondo_botones"
+                android:padding="12dp"
+                android:textColor="@color/Texto" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_aceptar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/fondo_botones"
+                android:padding="12dp"
+                android:textColor="@color/Texto" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

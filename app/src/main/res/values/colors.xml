@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#72a63e</color>
+    <color name="colorPrimaryDark">#508f3a</color>
+    <color name="colorAccent">#c7c7c7</color>
+    <color name="Texto">#ffffff</color>
+    <color name="Blanco">#ffffff</color>
+    <color name="negro">#000000</color>
+
+    <color name="trasparencia">#56ffffff</color>
+    <color name="trasparencia_2">#1cffffff</color>
+    <color name="trasparencia_verde">#a3508f3a</color>
+    <color name="trasparencia_verde_10">#77000000</color>
+    <color name="trasparencia_verde_10_">#77508f3a</color>
+    <color name="trasparencia_verde_2">#c6508f3a</color>
+    <color name="selector">#5e508f3a</color>
+
+    <color name="negro_tras">#77000000</color>
+    <color name="negro_trasparente">#e3000000</color>
+    <color name="rojo">#ff0004</color>
+
+    <color name="leyenda">#28b767</color>
+    <color name="pro">#2CDC70</color>
+    <color name="semipro">#FBB03B</color>
+    <color name="ameteur">#FB7C37</color>
+    <color name="recreacion">#EF4F39</color>
+
+
+
+    <array name="array_dot_active">
+        <item>@color/Blanco</item>
+        <item>@color/Blanco</item>
+        <item>@color/Blanco</item>
+        <item>@color/Blanco</item>
+        <item>@color/Blanco</item>
+        <item>@color/Blanco</item>
+        <item>@color/Blanco</item>
+        <item>@color/Blanco</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/Blanco</item>
+        <item>@color/Blanco</item>
+        <item>@color/Blanco</item>
+        <item>@color/Blanco</item>
+        <item>@color/Blanco</item>
+        <item>@color/Blanco</item>
+        <item>@color/Blanco</item>
+        <item>@color/Blanco</item>
+    </array>
+
+
+
+</resources>
